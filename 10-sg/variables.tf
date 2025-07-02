@@ -12,7 +12,17 @@ variable "frontend_sg_name" {
   
 }
 
-variable "front_sg_description" {
+variable "frontend_sg_description" {
     default = " Created sg for frontend instance"
+  
+}
+
+variable "bastian_sg_name" {
+    default = "bastian"
+  
+}
+
+variable "bastian_sg_description" {
+    default = " Created sg for bastian instance"
   
 }
