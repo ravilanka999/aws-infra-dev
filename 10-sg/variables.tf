@@ -26,3 +26,13 @@ variable "bastian_sg_description" {
     default = " Created sg for bastian instance"
   
 }
+
+variable "backend_alb_name" {
+    default = "backend-alb"
+  
+}
+
+variable "backend_alb_description" {
+    default = " for backend alb"
+  
+}
