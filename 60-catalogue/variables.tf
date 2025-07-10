@@ -1,6 +1,5 @@
 variable "project" {
     default = "roboshop"
-  
 }
 
 variable "environment" {
@@ -14,4 +13,3 @@ variable "zone_id" {
 variable "zone_name" {
     default = "sindhu.agency"
 }
-
