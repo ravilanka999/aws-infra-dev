@@ -39,3 +39,9 @@ resource "aws_ssm_parameter" "rabbitmq_sg_id" {
   type  = "String"
   value = module.rabbitmq.sg_id
 }
+
+resource "aws_ssm_parameter" "redis_sg_id" {
+  name  = "/${var.project}/${var.environment}/redis_sg_id"
+  type  = "String"
+  value = module.redis.sg_id
+}
