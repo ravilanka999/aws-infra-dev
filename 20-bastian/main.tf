@@ -10,8 +10,7 @@ resource "aws_instance" "bastion" {
     volume_type = "gp3" # or "gp2", depending on your preference
   }
   user_data = file("bastion.sh")
-  # iam_instance_profile = "TerraformAdmin"
-  iam_instance_profile = "EC2RoleToFetchSSMParams"
+  iam_instance_profile = "terraform-admin"
 
   tags = merge(
     local.common_tags,
